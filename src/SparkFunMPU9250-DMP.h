@@ -99,6 +99,8 @@ public:
 	// Output: INV_SUCCESS (0) on success, otherwise error
 	inv_error_t setSensors(unsigned char sensors);
 	
+	inv_error_t enableWakeOnMotion(float womThresh_mg,LpAccelOdr odr);
+	
 	// setGyroFSR(unsigned short) -- Sets the full-scale range of the gyroscope
 	// Input: Gyro DPS - 250, 500, 1000, or 2000
 	// Output: INV_SUCCESS (0) on success, otherwise error
